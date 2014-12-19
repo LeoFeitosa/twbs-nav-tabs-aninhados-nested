@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap | Nav Tabs Aninhados (Nested)</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <body>
+    <h1>Nav Tabs Aninhados (Nested)</h1>
+    <ul class= "nav nav-tabs">
+    <li>
+        <a href="#tab1" data-toggle="tab">Tab<strong> 1</strong></a>
+    </li>
+    <li>
+        <a href="#tab2" data-toggle="tab">Tab<strong> 2</strong></a>
+    </li>
+    <li>
+        <a href="#tab3" data-toggle="tab">Tab<strong> 3</strong></a>
+    </li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane" id="tab1">
+    <ul class= "nav nav-tabs">
+        <li class="active">
+            <a href="#first_child_tab1" data-toggle="tab">Primeiro filho tab<strong> 1</strong></a>
+        </li>
+        <li>
+            <a href="#second_child_tab1" data-toggle="tab">Segundo filho tab<strong> 1</strong></a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">    
+        <div class="tab-pane active" id="first_child_tab1">
+            <p>Estou no <strong>PRIMEIRO</strong> filho da tab<strong> 1</strong></p>
+        </div>
+        <div class="tab-pane" id="second_child_tab1">
+            <p>Estou no <strong>SEGUNDO</strong> filho da tab<strong> 1</strong></p>
+        </div>
+    </div>
+</div>
+    
+<div class="tab-pane" id="tab2">
+    <ul class= "nav nav-tabs">
+        <li class="active">
+            <a href="#first_child_tab2" data-toggle="tab">Primeiro filho tab<strong> 2</strong></a>
+        </li>
+        <li>
+            <a href="#second_child_tab2" data-toggle="tab">Segundo filho tab<strong> 2</strong></a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">    
+        <div class="tab-pane active" id="first_child_tab2">
+            <p>Estou no <strong>PRIMEIRO</strong> filho da tab<strong> 2</strong></p>
+        </div>
+        <div class="tab-pane" id="second_child_tab2">
+            <p>Estou no <strong>SEGUNDO</strong> filho da tab<strong> 2</strong></p>
+        </div>
+    </div>
+</div>
+    
+<div class="tab-pane" id="tab3">
+    <ul class= "nav nav-tabs">
+        <li class="active">
+            <a href="#first_child_tab3" data-toggle="tab">Primeiro filho tab<strong> 3</strong></a>
+        </li>
+        <li>
+            <a href="#second_child_tab3" data-toggle="tab">Segundo filho tab<strong> 3</strong></a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">    
+        <div class="tab-pane active" id="first_child_tab3">
+            <p>Estou no <strong>PRIMEIRO</strong> filho da tab<strong> 3</strong></p>
+        </div>
+        <div class="tab-pane" id="second_child_tab3">
+            <p>Estou no <strong>SEGUNDO</strong> filho da tab<strong> 3</strong></p>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
